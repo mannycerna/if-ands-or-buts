@@ -29,10 +29,10 @@ if (player2 !== "rock" && player2 !== "paper" && player2 !== "scissors"){
     player2 = prompt("Invalid, please enter: rock, paper, or scissors!");
 }
 
-//Created if statement to handle blank entries from players
+//Created if statement to handle invalid (blanks or numbers) entries from players
 if (((player1 === "") && (player2 === "")) || (!isNaN(player1) && (!isNaN(player2)))) {
     console.log("Blanks or numbers are not valid!")
-    return false;
+    return false;  //This ends game in terminal
 }
 
 //Created if statement to handle rules of game to include draws
