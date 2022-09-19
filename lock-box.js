@@ -4,8 +4,8 @@ let pinCode = 1234;
 
 let enterCode = Number(prompt("Please enter pin code: "));
 
-if (enterCode === 1234) {
+if (enterCode === pinCode) {
     console.log("Succes!  You have opened lock box!")
-}  else if (enterCode !== 1234) {
+}  else if (enterCode !== pinCode) {
     console.log("Failure!  Incorrect pin code.")
 }
